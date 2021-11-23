@@ -9,3 +9,6 @@
 
 > npm install -D typescript
 > npx tsc --init
+
+> npm install -D eslint
+> npx eslint init
