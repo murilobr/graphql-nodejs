@@ -1,18 +1,18 @@
-import { buildSchema, graphql } from "graphql";
+import { ApolloServer, gql } from "apollo-server";
 
-const schema = buildSchema(`
-	type Query {
-		hello: String
-	}`);
+const typeDefs = gql`
+    type Query {
+        hello: String
+    }
+`;
 
-const root = {
-    hello: () => "Hello World!",
+const resolvers = {
+    Query: {
+        hello: () => "Hello, World!",
+    },
 };
 
-const query = `{
-	hello
-}`;
-
-graphql({ schema, rootValue: root, source: query }).then((result) => {
-    console.log(JSON.stringify(result, null, 4));
+const server = new ApolloServer({ typeDefs, resolvers });
+server.listen().then(({ url }) => {
+    console.log(`🚀  Server ready at ${url}`);
 });
