@@ -17,6 +17,9 @@
     },
     "homepage": "https://github.com/murilobr/graphql-nodejs#readme",
     "devDependencies": {
+        "@commitlint/cli": "^15.0.0",
+        "@commitlint/config-conventional": "^15.0.0",
+        "commitlint": "^15.0.0",
         "husky": "^7.0.0"
     }
 }
