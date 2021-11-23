@@ -17,3 +17,6 @@
 > npm install -D eslint-config-prettier
 
 > npm install -D ts-node
+
+> npm install -D lint-staged
+> npx husky add .husky/pre-commit 'npx --no-install lint-staged'
