@@ -12,3 +12,6 @@
 
 > npm install -D eslint
 > npx eslint init
+
+> npm install -D prettier
+> npm install -D eslint-config-prettier
