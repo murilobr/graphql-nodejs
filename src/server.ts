@@ -3,7 +3,8 @@ import { buildSchema, graphql } from "graphql";
 const schema = buildSchema(`
 	type Query {
 		hello: String
-	}`);
+	}
+`);
 
 const root = {
     hello: () => "Hello World!",
