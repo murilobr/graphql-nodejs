@@ -1,0 +1,3 @@
+# Project steps
+
+> npx init
